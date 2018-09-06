@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#e6e6e6</color>
+    <color name="application_primary_text_color">#212121</color>
+    <color name="darkBlue">#1565c0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue_descent">#4b76c2</color>
+    <color name="red_nav">#D3332B</color>
+    <color name="uvv_green">#ff50b100</color>
+    <color name="uvv_black">#ff000000</color>
+    <color name="uvv_light_gray">#ffF0F0F0</color>
+    <color name="uvv_gray">#ffbbbbbb</color>
+    <color name="edittext_border">#cfcfcf</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="autotextbox">#D3D3D3</color>
+    <color name="header_text_color">#696969</color>
+    <color name="header_text_color1">#3c4651</color>
+    <color name="lightGrey">#E0E0E0</color>
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="policyboss.com.inspect">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <meta-data
+        android:name="DATABASE"
+        android:value="policyboss_inspect.db" />
+    <meta-data
+        android:name="VERSION"
+        android:value="2" />
+    <meta-data
+        android:name="QUERY_LOG"
+        android:value="true" />
+    <meta-data
+        android:name="DOMAIN_PACKAGE_NAME"
+        android:value="policyboss.com.inspect" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/pb_inspect_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/pb_inspect_icon_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="inspection.home.MainActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="inspection.splash.SplashScreen"
+            android:label="@string/title_activity_splash_screen"
+            android:noHistory="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name="inspection.home.RCPOLICYActivity"
+            android:label="@string/title_activity_rcpolicy"
+            android:parentActivityName="inspection.splash.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="inspection.splash.SplashScreen" />
+        </activity>
+        <activity
+            android:name="inspection.home.UploadDocumentActivity"
+            android:label="@string/title_activity_upload_document"
+            android:parentActivityName="inspection.home.RCPOLICYActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="inspection.home.RCPOLICYActivity" />
+        </activity>
+        <activity
+            android:name="inspection.selfdeclaration.PhotoCaptureActivity"
+            android:label="@string/title_activity_photo_capture"
+            android:parentActivityName="inspection.selfdeclaration.SelfDeclareActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="inspection.selfdeclaration.SelfDeclareActivity" />
+        </activity>
+        <activity
+            android:name="inspection.activities.ThankYouActivity"
+            android:label="@string/title_activity_thank_you"
+            android:parentActivityName="inspection.selfdeclaration.PhotoCaptureActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="inspection.selfdeclaration.PhotoCaptureActivity" />
+        </activity>
+
+
+
+
+        <activity
+            android:name="inspection.home.PreviewVideoActivity"
+            android:label="@string/title_activity_preview_video"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="inspection.home.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="inspection.selfdeclaration.DeclareSelfActivity2"
+            android:label="@string/title_activity_declare_self2"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".inspection.selfdeclaration.PhotoCaptureActivity"
+            android:label="@string/title_activity_photo_capture"
+            android:parentActivityName=".inspection.selfdeclaration.SelfDeclareActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".inspection.selfdeclaration.SelfDeclareActivity" />
+        </activity>
+    </application>
+
+</manifest>

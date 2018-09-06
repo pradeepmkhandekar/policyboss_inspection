@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/single_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_check_box_icon"
+                android:textSize="13sp" />
+
+
+            <TextView
+                android:background="?selectableItemBackground"
+                android:paddingLeft="5dp"
+                android:id="@+id/frontName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_name"
+                android:gravity="center_vertical"
+                android:text="Front Bumper"
+                android:textColor="@android:color/black"
+                android:textSize="13sp">
+
+            </TextView>
+
+            <TextView
+
+                android:paddingLeft="10dp"
+                android:background="?selectableItemBackground"
+                android:id="@+id/val"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_name"
+                android:gravity="center_vertical"
+                android:text="SELECT"
+                android:textColor="@android:color/black"
+                android:textSize="13sp">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#01579b" />
+
+</LinearLayout>

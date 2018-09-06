@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+
+    android:weightSum="100"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#e0e0e0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:paddingBottom="7dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="7dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/logo" />
+
+
+        <TextView
+
+            android:id="@+id/txtodo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Vehicle Detail"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtchasis"
+            android:text="CAPTURE IMAGE OF CHASSIS NUMBER"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+        <TextView
+
+            android:id="@+id/txtrc"
+            android:text="CAPTURE IMAGE OF RC BOOK"
+
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="normal|bold"/>
+        <TextView
+            android:id="@+id/txtpolicy"
+            android:text="CAPTURE IMAGE OF POLICY CERTIFICATE"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:paddingBottom="7dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="7dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/autspect" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="10dp"
+        android:layout_weight="90"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="SELF VIDEO INSPECTION"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etMbNo"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:digits="0123456789+"
+            android:hint="Enter your mobile no."
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/etCarNo"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:hint="Enter your car reg. no."
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="text"
+            android:maxLength="10"
+            android:textAllCaps="true"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/btnProceed"
+            style="@style/ButtonStyleInspect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="35dp"
+            android:paddingLeft="25dp"
+            android:background="@drawable/button_sel_2"
+            android:paddingRight="25dp"
+            android:text="PROCEED" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

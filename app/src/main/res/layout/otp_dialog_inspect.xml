@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/fab_margin">
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:text="ENTER THE OTP SEND ON YOUR MOBILE NUMBER"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etOtp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvTitle"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="25dp"
+            android:id="@+id/tvOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+
+            android:layout_marginTop="5dp"
+            android:text="VERIFY"
+            android:textSize="15sp"
+            android:background="@drawable/button_sel"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white" />
+        <Button
+            android:layout_marginRight="15dp"
+            android:id="@+id/tvResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+
+            android:layout_marginTop="5dp"
+            android:text="RESEND"
+            android:layout_marginLeft="30dp"
+            android:textSize="15sp"
+            android:background="@drawable/button_sel_2"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</RelativeLayout>

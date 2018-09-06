@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFF"
+    android:gravity="left|center"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".inspection.activities.ThankYouActivity"
+    tools:showIn="@layout/activity_thank_you">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/txtThankyou"
+            android:layout_width="wrap_content"
+            android:layout_height="155dp"
+
+            android:layout_marginBottom="50dp"
+            android:textSize="13sp"
+            android:layout_margin="55dp"
+            android:text="Thank You\nSelf Inspection Application with\nReference Number  has been\nsubmitted successfully.\nOur team will review and do needful for policy issuance.\nYou may contact us at 1800-xxx-xxxxx in case of any query."
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:id="@+id/leanokandretake"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="11" />
+
+            <Button
+                android:id="@+id/btnEndInspection1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:background="@drawable/button_sel"
+                android:text="START INSPECTION FOR ANOTHER VEHICLE"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10" />
+
+            <Button
+                android:id="@+id/btnEndInspection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="35"
+                android:background="@drawable/button_sel_2"
+                android:text="EXIT"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <!-- <LinearLayout
+             android:layout_margin="5dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="horizontal"
+             android:weightSum="100">
+
+             <Button
+                 android:textSize="15sp"
+               android:gravity="center"
+                 style="@style/ButtonStyle"
+                 android:layout_width="0dp"
+                 android:layout_weight="50"
+                 android:layout_height="match_parent"
+                 android:id="@+id/btnEndInspection1"
+                 android:layout_marginTop="@dimen/fab_margin"
+                 android:background="@android:color/holo_red_dark"
+                 android:textColor="@android:color/white"
+                 android:text="START INSPECTION FOR ANOTHER VEHICLE"
+                 />
+
+             <Button
+                 android:layout_gravity="center"
+                 style="@style/ButtonStyle"
+                 android:layout_width="0dp"
+                 android:layout_weight="50"
+                 android:layout_height="wrap_content"
+                 android:textSize="15sp"
+                 android:textStyle="bold"
+                 android:id="@+id/btnEndInspection"
+                 android:layout_marginTop="@dimen/fab_margin"
+                 android:background="@android:color/holo_red_dark"
+                 android:textColor="@android:color/white"
+                 android:text="EXIT"
+                 />
+
+         </LinearLayout>-->
+
+    </LinearLayout>
+</LinearLayout>
